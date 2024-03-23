@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{A92540EF-2BC2-4985-A067-7F2F0F578D68}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{08100028-6281-4A69-BE72-801FDC1457E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api.tork.challenge.webapi", "api.tork.challenge.webapi\api.tork.challenge.webapi.csproj", "{5A78C15F-3ECF-4F38-B539-D2D40C2ACD13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api.tork.challenge.domain", "api.tork.challenge.domain\api.tork.challenge.domain.csproj", "{D14B382F-1E91-4F26-A414-3484B550941E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{4F5791F7-5D16-4322-80C9-D265AE467F99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api.tork.challenge.application", "api.tork.challenge.application\api.tork.challenge.application.csproj", "{5D78D792-C788-408E-97A6-5957E906657A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api.tork.challenge.DbRepository", "api.tork.challenge.DbRepository\api.tork.challenge.DbRepository.csproj", "{0BF7E10B-920B-4265-BE41-1AB1B7604285}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A78C15F-3ECF-4F38-B539-D2D40C2ACD13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A78C15F-3ECF-4F38-B539-D2D40C2ACD13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A78C15F-3ECF-4F38-B539-D2D40C2ACD13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A78C15F-3ECF-4F38-B539-D2D40C2ACD13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D14B382F-1E91-4F26-A414-3484B550941E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D14B382F-1E91-4F26-A414-3484B550941E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D14B382F-1E91-4F26-A414-3484B550941E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D14B382F-1E91-4F26-A414-3484B550941E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D78D792-C788-408E-97A6-5957E906657A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D78D792-C788-408E-97A6-5957E906657A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D78D792-C788-408E-97A6-5957E906657A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D78D792-C788-408E-97A6-5957E906657A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BF7E10B-920B-4265-BE41-1AB1B7604285}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BF7E10B-920B-4265-BE41-1AB1B7604285}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BF7E10B-920B-4265-BE41-1AB1B7604285}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BF7E10B-920B-4265-BE41-1AB1B7604285}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5A78C15F-3ECF-4F38-B539-D2D40C2ACD13} = {08100028-6281-4A69-BE72-801FDC1457E1}
+		{D14B382F-1E91-4F26-A414-3484B550941E} = {A92540EF-2BC2-4985-A067-7F2F0F578D68}
+		{5D78D792-C788-408E-97A6-5957E906657A} = {A92540EF-2BC2-4985-A067-7F2F0F578D68}
+		{0BF7E10B-920B-4265-BE41-1AB1B7604285} = {4F5791F7-5D16-4322-80C9-D265AE467F99}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9C0A3B8-2CA3-460E-9229-32899B568861}
+	EndGlobalSection
+EndGlobal

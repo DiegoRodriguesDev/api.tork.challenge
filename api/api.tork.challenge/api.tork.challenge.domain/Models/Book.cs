@@ -14,7 +14,6 @@
 
         public Book()
         {
-            Validate();
         }
 
         private void Validate()

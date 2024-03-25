@@ -1,6 +1,6 @@
 using api.tork.challenge.application.DependencyInjection;
+using api.tork.challenge.DbRepository;
 using api.tork.challenge.DbRepository.DependencyInjection;
-using api.tork.challenge.DbRepository.V1;
 using api.tork.challenge.DbRepository.V1.Mappers;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,9 +12,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<ApiDbContext>();
+new InitialDatabase();
 
-builder.Services.AddDbRepositoryAdapter(new DbRepositoryAdapterConfiguration());
+builder.Services.AddDbRepositoryAdapter();
 builder.Services.AddApplication();
 builder.Services.AddAutoMapper(typeof(DbRepositoryAdapterMapperProfile));
 

@@ -1,4 +1,5 @@
-﻿using api.tork.challenge.DbRepository.V1.DTOs;
+﻿using api.tork.challenge.DbRepository.Context;
+using api.tork.challenge.DbRepository.V1.DTOs;
 using api.tork.challenge.domain.Adapters.DbRepositories;
 using api.tork.challenge.domain.Models;
 using AutoMapper;
@@ -9,7 +10,7 @@ namespace api.tork.challenge.DbRepository.V1.Repositories
     public class BookDbRepository : IBookDbRepositoryAdapter
     {
         private readonly IMapper _mapper;
-
+        
         public BookDbRepository(IMapper mapper)
         {
             _mapper = mapper;
@@ -42,7 +43,7 @@ namespace api.tork.challenge.DbRepository.V1.Repositories
             var books = new List<Book>();
             using (var context = new ApiDbContext())
             {
-                List<BookDto> booksDto = context.Books.Where(b => b.category.Contains(title)).ToList();
+                List<BookDto> booksDto = context.Books.Where(b => b.title.Contains(title)).ToList();
                 books = _mapper.Map<List<Book>>(booksDto);
             }
             return books;
